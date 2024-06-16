@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    /* Added background color for better contrast */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    /* Adjusted opacity here */
+    max-width: 600px;
+    width: 90%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+h1 {
+    /* font-family: 'Anton', sans-serif; */
+    font-size: 1.2em;
+    /* Smaller size */
+    margin: 10px 0;
+    color: #cdd7e1;
+    /* Bright yellow for visibility */
+}
+
+h2 {
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.4em;
+    padding-bottom: 8px;
+    margin: 10px 0;
+    margin-left: -4px;
+    color: #e92007;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.passes p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ff6600;
+    /* Bright orange */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.accuracy {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ffcc00;
+    /* Bright gold */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+#timer {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #ff0;
+    /* Bright yellow */
+}
+
+#countdown {
+    font-size: 2em;
+    color: #ff0;
+    animation: pop 1s infinite;
+}
+
+@keyframes pop {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .accuracy {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
